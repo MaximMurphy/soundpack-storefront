@@ -1,6 +1,6 @@
 export default function Marquee() {
   return (
-    <main>
+    <section>
       <div className="relative flex overflow-x-hidden border-solid border-2 border-black">
         <div className="py-12 animate-carousel whitespace-nowrap">
           <span className="mx-4 text-4xl">Marquee Item 1</span>
@@ -17,6 +17,6 @@ export default function Marquee() {
           <span className="mx-4 text-4xl">Marquee Item 5</span>
         </div>
       </div>
-    </main>
+    </section>
   );
 }

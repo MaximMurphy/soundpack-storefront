@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Manrope } from "next/font/google";
+import Navbar from "@/components/layout/navbar";
+import { Suspense } from "react";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -15,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={manrope.className}>{children}</body>
+      <body className={manrope.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
