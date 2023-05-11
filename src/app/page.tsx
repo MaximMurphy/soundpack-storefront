@@ -4,16 +4,10 @@ import DarkModeBtn from "@/components/DarkModeBtn";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen flex flex-col items-center p-24 gap-12">
-      <div className="flex flex-col items-center gap-36">
-        <h1 className="dark:text-yellow-400 text-3xl font-medium tracking-wide antialiased">
-          Hello World
-        </h1>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-      </div>
+    <main className="w-full min-h-screen flex flex-col items-center dark:text-stone-400">
+      <h1 className="text-3xl font-medium tracking-wide antialiased text-center p-12">
+        Sound Packs and Presets
+      </h1>
     </main>
   );
 }
