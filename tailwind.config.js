@@ -31,7 +31,7 @@ module.exports = {
         carousel2: "marquee2 10s linear infinite",
       },
     },
-    darkMode: "class",
     plugins: [],
   },
+  darkMode: "class",
 };

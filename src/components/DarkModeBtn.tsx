@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { Icon } from "@iconify/react";
 
 export default function DarkModeBtn() {
   const [mounted, setMounted] = useState(false);
@@ -24,6 +25,19 @@ export default function DarkModeBtn() {
         <option value="dark">Dark</option>
         <option value="light">Light</option>
       </select>
+      {currentTheme === "dark" ? (
+        <Icon
+          icon="material-symbols:light-mode-outline"
+          className="cursor-pointer h-6 w-6"
+          onClick={() => setTheme("light")}
+        />
+      ) : (
+        <Icon
+          icon="material-symbols:dark-mode-outline"
+          className="cursor-pointer h-6 w-6"
+          onClick={() => setTheme("dark")}
+        />
+      )}
     </>
   );
 }
