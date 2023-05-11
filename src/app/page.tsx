@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Marquee from "@/components/Marquee";
+import DarkModeBtn from "@/components/DarkModeBtn";
 
 export default function Home() {
   return (
