@@ -20,11 +20,6 @@ export default function DarkModeBtn() {
 
   return (
     <>
-      <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-        <option value="system">System</option>
-        <option value="dark">Dark</option>
-        <option value="light">Light</option>
-      </select>
       {currentTheme === "dark" ? (
         <Icon
           icon="material-symbols:light-mode-outline"
