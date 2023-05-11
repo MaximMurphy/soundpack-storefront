@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Icon } from "@iconify/react";
 import DarkModeBtn from "../DarkModeBtn";
 
@@ -10,12 +11,14 @@ export default function Navbar() {
         <span className="bg-blue-800 w-full"> </span>
         <span className="bg-indigo-800 w-full"> </span>
         <span className="bg-violet-800 w-full"> </span>
-        <span className="bg-purple-800 w-full"> </span>
+        <span className="bg-fuchsia-800 w-full"> </span>
       </div>
-      <p className="text-3xl text-center font-bold pt-4">DIGITAL</p>
+      <Link href="/">
+        <p className="text-3xl text-center font-bold pt-4">DIGITAL</p>
+      </Link>
       <div className="flex flex-row text-center justify-between px-4 lg:px-8 pb-8 -mt-8">
         <div className="flex flex-row text-md font-bold lg:text-lg gap-4 lg:gap-8">
-          <p>SHOP</p>
+          <Link href="/shop">SHOP</Link>
           <p className="hidden md:flex">SEARCH</p>
           <Icon icon="material-symbols:search" className="h-6 w-6 lg:hidden" />
         </div>
