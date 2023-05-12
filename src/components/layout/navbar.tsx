@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="flex flex-row text-center justify-between px-4 lg:px-8 pb-8 -mt-8">
         <div className="flex flex-row text-md font-medium lg:text-lg gap-4 lg:gap-8">
           <Link
-            href="/shop"
+            href="/products"
             className="hover:underline decoration-1 underline-offset-2"
           >
             SHOP

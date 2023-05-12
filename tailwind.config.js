@@ -35,7 +35,7 @@ module.exports = {
         },
         move: {
           "0%": { transform: "translateY(-5%) rotate(0deg)" },
-          "50%": { transform: "translateY(10%) rotate(180deg)" },
+          "50%": { transform: "translateY(40%) rotate(180deg)" },
           "100%": { transform: "translateY(-5%) rotate(360deg)" },
         },
         text: {
@@ -54,7 +54,7 @@ module.exports = {
         carousel2: "marquee2 30s linear infinite",
         turn: "turn 10s linear infinite",
         move: "move 15s linear infinite",
-        text: "text 10s ease infinite",
+        text: "text 8s ease infinite",
       },
     },
     plugins: [],
