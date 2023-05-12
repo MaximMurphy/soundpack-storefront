@@ -4,6 +4,7 @@ import Image from "next/image";
 import Marquee from "@/components/Marquee";
 import { Component, useEffect } from "react";
 import Blob from "@/components/Blob";
+import StaticBlob from "@/components/StaticBlob";
 import { Icon } from "@iconify/react";
 
 export function HomePageText() {
@@ -47,6 +48,7 @@ export default function Home() {
     //mobile
     return (
       <div className="overflow-hidden">
+        <StaticBlob />
         <HomePageText />
       </div>
     );
