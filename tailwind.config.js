@@ -28,16 +28,22 @@ module.exports = {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
         },
-        rotate: {
+        turn: {
           "0%": { transform: "rotate(0deg)" },
-          "50%": { transform: "scale(110%)" },
+          "50%": { transform: "rotate(180deg)" },
           "100%": { transform: "rotate(360deg)" },
+        },
+        move: {
+          "0%": { transform: "translateY(-5%) rotate(0deg)" },
+          "50%": { transform: "translateY(10%) rotate(180deg)" },
+          "100%": { transform: "translateY(-5%) rotate(360deg)" },
         },
       },
       animation: {
-        carousel: "marquee 10s linear infinite",
-        carousel2: "marquee2 10s linear infinite",
-        spinSlow: "rotate 10s linear infinite",
+        carousel: "marquee 30s linear infinite",
+        carousel2: "marquee2 30s linear infinite",
+        turn: "turn 10s linear infinite",
+        move: "move 15s linear infinite",
       },
     },
     plugins: [],

@@ -19,7 +19,7 @@ export default function Blob() {
   return (
     <div
       id="blob"
-      className="-z-10 bg-gradient-to-r from-blue-600/20 to-fuchsia-600/20 h-[35rem] w-[35rem] fixed left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[200px]"
+      className="-z-10 bg-gradient-to-r from-blue-600/20 to-fuchsia-600/20 h-[35rem] w-[35rem] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full blur-[200px]"
     ></div>
   );
 }
