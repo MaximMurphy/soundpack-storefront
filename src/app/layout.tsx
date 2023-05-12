@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Manrope } from "next/font/google";
-import Navbar from "@/components/layout/navbar";
+import Navbar from "@/components/layout/Navbar";
 import { Suspense } from "react";
 import Providers from "./Providers";
 
@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={manrope.className}>
+      <body
+        className={`${manrope.className} scroll-smooth tracking-wide antialiased overflow-x-hidden`}
+      >
         <Providers>
           <Navbar />
           {children}

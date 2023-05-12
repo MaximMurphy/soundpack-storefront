@@ -1,0 +1,22 @@
+{
+  "soundPacks": {
+    "pack1": {
+      "id": 1,
+      "name": "Streetlights",
+      "price": "$5",
+      "genre": "Electronic",
+      "quantity": 10,
+      "type": "sound",
+      "Synth": "N/A"
+    },
+    "pack2": {
+      "id": 2,
+      "name": "2000's Throwbacks",
+      "price": "$5",
+      "genre": "Electronic",
+      "quantity": 10,
+      "type": "preset",
+      "Synth": "serum"
+    }
+  }
+}

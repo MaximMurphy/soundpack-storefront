@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backdropBlur: {
+        xs: "2px",
+      },
       colors: {
         primary1: "rgb(222, 222, 222);",
         primary2: "rgb(36, 36, 36);",
