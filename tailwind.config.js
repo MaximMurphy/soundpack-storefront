@@ -38,12 +38,23 @@ module.exports = {
           "50%": { transform: "translateY(10%) rotate(180deg)" },
           "100%": { transform: "translateY(-5%) rotate(360deg)" },
         },
+        text: {
+          "0%, 100%": {
+            "background-size": "300% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "300% 200%",
+            "background-position": "right center",
+          },
+        },
       },
       animation: {
         carousel: "marquee 30s linear infinite",
         carousel2: "marquee2 30s linear infinite",
         turn: "turn 10s linear infinite",
         move: "move 15s linear infinite",
+        text: "text 10s ease infinite",
       },
     },
     plugins: [],

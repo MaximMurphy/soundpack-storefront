@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import Marquee from "@/components/Marquee";
-import { Component, useEffect } from "react";
 import Blob from "@/components/Blob";
 import StaticBlob from "@/components/StaticBlob";
 import { Icon } from "@iconify/react";

@@ -14,7 +14,7 @@ export default function Navbar() {
         <span className="bg-fuchsia-800 w-full"> </span>
       </div>
       <Link href="/" className="flex text-center justify-center">
-        <p className="w-72 text-3xl font-bold pt-4 hover:underline decoration-1 underline-offset-2">
+        <p className="w-72 animate-text bg-gradient-to-r from-[#242424] dark:from-stone-300 via-violet-800 dark:via-violet-400 to-[#242424] dark:to-stone-300 bg-clip-text text-transparent text-3xl font-bold pt-4 hover:underline decoration-1 underline-offset-2">
           WAVFORM
         </p>
       </Link>
