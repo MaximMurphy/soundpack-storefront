@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import { Suspense } from "react";
 import Providers from "./Providers";
+import Footer from "@/components/layout/Footer";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -19,11 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.className} scroll-smooth tracking-wide antialiased overflow-x-hidden`}
+        className={`${manrope.className} scroll-smooth tracking-wide antialiased overflow-x-hidden relative min-h-screen`}
       >
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

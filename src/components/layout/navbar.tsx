@@ -6,16 +6,16 @@ import DarkModeBtn from "../DarkModeBtn";
 
 export default function Navbar() {
   return (
-    <div className="z-50 w-full sticky top-0 backdrop-blur-xs dark:text-stone-200">
+    <div className="z-50 w-full sticky top-0 backdrop-blur-xs dark:text-stone-300">
       <div className="h-2 w-full flex flex-row justify-between">
         <span className="bg-blue-800 w-full"> </span>
         <span className="bg-indigo-800 w-full"> </span>
         <span className="bg-violet-800 w-full"> </span>
         <span className="bg-fuchsia-800 w-full"> </span>
       </div>
-      <Link href="/" className="flex justify-center">
-        <p className="w-36 text-3xl items-center text-center font-bold pt-4 hover:underline decoration-1 underline-offset-2">
-          DIGITAL
+      <Link href="/" className="flex text-center justify-center">
+        <p className="w-72 text-3xl font-bold pt-4 hover:underline decoration-1 underline-offset-2">
+          WAVFORM
         </p>
       </Link>
       <div className="flex flex-row text-center justify-between px-4 lg:px-8 pb-8 -mt-8">

@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="scroll-smooth w-full h-full grid grid-cols-2 items-center justify-items-center lg:grid-cols-4 p-4 lg:p-12 gap-8">
+    <div className="scroll-smooth w-full h-full grid grid-cols-2 items-center justify-items-center lg:grid-cols-4 p-4 lg:p-12 gap-8 pb-24 lg:pb-40">
       <div className="h-48 w-36 lg:h-96 lg:w-72 bg-stone-400/30 flex items-center justify-center">
         1
       </div>

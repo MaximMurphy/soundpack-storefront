@@ -11,7 +11,7 @@ export default function Blob() {
           left: `${clientX}px`,
           top: `${clientY}px`,
         },
-        { duration: 2000, fill: "forwards" }
+        { duration: 3000, fill: "forwards" }
       );
     };
   }, []);
