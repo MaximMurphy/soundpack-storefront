@@ -74,9 +74,10 @@ const Product = ({ product }: { product: any }) => {
                         <span className="absolute inset-0 overflow-hidden rounded-md">
                           <Image
                             alt=""
-                            fill
+                            width={50}
+                            height={50}
                             src={image?.file?.url}
-                            className="h-full w-full object-cover object-center"
+                            className="h-24 w-24 object-cover object-center"
                           />
                         </span>
                         <span
@@ -97,10 +98,11 @@ const Product = ({ product }: { product: any }) => {
               {product.images?.map((image: any) => (
                 <Tab.Panel key={image.id}>
                   <Image
-                    fill
+                    width={50}
+                    height={50}
                     src={image.file.url}
                     alt={image.file.metadata || ""}
-                    className="h-full w-full object-cover object-center sm:rounded-lg"
+                    className="h-24 w-24 object-cover object-center sm:rounded-lg"
                   />
                 </Tab.Panel>
               ))}
