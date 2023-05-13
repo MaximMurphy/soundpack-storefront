@@ -23,6 +23,16 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "lib/utils/index.js",
+    "src/components/product.tsx",
+    "lib/swell/client.js",
+    "lib/swell/products.js",
+    "lib/swell/cart.js"
+  ],
   "exclude": ["node_modules"]
 }

@@ -1,6 +1,5 @@
 "use client";
 
-import Marquee from "@/components/Marquee";
 import Blob from "@/components/Blob";
 import StaticBlob from "@/components/StaticBlob";
 import { Icon } from "@iconify/react";
