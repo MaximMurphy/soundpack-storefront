@@ -14,12 +14,12 @@ export default function Navbar() {
         <span className="bg-fuchsia-800 w-full"> </span>
       </div>
       <Link href="/" className="flex text-center justify-center">
-        <p className="w-72 animate-text bg-gradient-to-r from-[#242424] dark:from-stone-300 via-violet-800 dark:via-violet-400 to-[#242424] dark:to-stone-300 bg-clip-text text-transparent text-3xl font-bold pt-4 hover:underline decoration-1 underline-offset-2">
+        <p className="w-72 text-3xl font-bold pt-4 hover:underline decoration-1 underline-offset-2">
           WAVFORM
         </p>
       </Link>
       <div className="flex flex-row text-center justify-between px-4 lg:px-8 pb-8 -mt-8">
-        <div className="flex flex-row text-md font-medium lg:text-lg gap-4 lg:gap-8">
+        <div className="flex flex-row text-md font-semibold lg:text-lg gap-4 lg:gap-8">
           <Link
             href="/products"
             className="hover:underline decoration-1 underline-offset-2"
@@ -31,11 +31,8 @@ export default function Navbar() {
           </button>
           <Icon icon="material-symbols:search" className="h-6 w-6 lg:hidden" />
         </div>
-        <div className="flex flex-row gap-2 lg:gap-8">
+        <div className="flex flex-row gap-4 lg:gap-8">
           <DarkModeBtn />
-          <Link href="/account">
-            <Icon icon="ic:baseline-account-box" className="h-6 w-6" />
-          </Link>
           <Link href="/cart">
             <Icon
               icon="material-symbols:shopping-bag-outline"

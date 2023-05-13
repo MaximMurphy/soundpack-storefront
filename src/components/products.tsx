@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Products = ({ products }: { products: Array<any> }) => {
   return (
-    <div className="-mt-24 w-full h-full px-24 pt-12 pb-48 bg-stone-200 dark:bg-stone-900">
-      <h1 className="mt-24 text-2xl font-semibold">Products</h1>
-      <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
+    <div className="-mt-24 w-full h-full px-12 lg:px-24 pt-12 pb-36 lg:pb-48 bg-stone-200 dark:bg-stone-800">
+      <h1 className="mt-24 text-2xl lg:text-3xl font-semibold">Products</h1>
+      <div className="mt-8 grid grid-cols-1 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
         {products.map((product: any) => (
           <Link
             key={product.id}

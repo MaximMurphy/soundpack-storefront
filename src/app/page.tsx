@@ -23,7 +23,7 @@ export function HomePageText() {
       <div className="flex flex-row p-8 gap-8">
         <Link
           href="/products"
-          className="font-bold bg-indigo-800 p-4 rounded-2xl text-white dark:text-stone-200"
+          className="font-bold bg-blue-800 dark:bg-indigo-800 p-4 rounded-2xl text-white dark:text-stone-200"
         >
           Shop Sounds
         </Link>
