@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="z-50 w-full sticky top-0 backdrop-blur-xs dark:text-stone-300">
+      <div className="z-50 w-full sticky top-0 backdrop-blur-xs dark:text-stone-300 tracking-wide antialiased">
         <div className="h-2 w-full flex flex-row justify-between">
           <span className="bg-blue-800 w-full"> </span>
           <span className="bg-indigo-800 w-full"> </span>
@@ -43,7 +43,7 @@ export default function Navbar() {
               className="h-6 w-6 lg:hidden"
             />
           </div>
-          <div className="flex flex-row items-center gap-2 lg:gap-4 hover:underline decoration-1 underline-offset-2">
+          <div className="flex flex-row items-center gap-4 lg:gap-8 hover:underline decoration-1 underline-offset-2">
             <DarkModeBtn />
 
             <button
@@ -55,7 +55,7 @@ export default function Navbar() {
                 className="h-6 w-6"
               />
               {cart?.item_quantity ? (
-                <span className="mt-1 h-4 w-4 text-xs font-medium">
+                <span className="mt-1 h-4 w-4 text-xs font-semibold">
                   {`(${cart?.item_quantity})`}
                 </span>
               ) : null}

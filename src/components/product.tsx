@@ -32,7 +32,7 @@ const Product = ({ product }: { product: any }) => {
   };
 
   return (
-    <div className="-mt-24 bg-stone-200 dark:bg-inherit overflow-y-hidden">
+    <div className="-mt-24 bg-stone-200 dark:bg-stone-800 overflow-y-hidden">
       <section className="pt-36 w-full h-full flex flex-col lg:flex-row gap-12 items-center justify-between px-12 pb-32 lg:px-52 ">
         {product.images?.map((image: any) => (
           <Image
