@@ -12,6 +12,8 @@ export default function Footer() {
           Developed by{" "}
           <Link
             href="https://github.com/MaximMurphy"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:underline decoration-1 underline-offset-2 decoration-stone-800 dark:decoration-stone-200"
           >
             Maxim Murphy

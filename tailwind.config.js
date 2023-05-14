@@ -48,6 +48,11 @@ module.exports = {
             "background-position": "right center",
           },
         },
+        wavy: {
+          "0%": { transform: "translateY(0%)" },
+          "50%": { transform: "translateY(-15%)" },
+          "100%": { transform: "translateY(0%)" },
+        },
       },
       animation: {
         carousel: "marquee 30s linear infinite",
@@ -55,6 +60,7 @@ module.exports = {
         turn: "turn 10s linear infinite",
         move: "move 15s linear infinite",
         text: "text 8s ease infinite",
+        wavy: "wavy 3s ease infinite",
       },
     },
     plugins: [],
