@@ -35,13 +35,16 @@ export default function Navbar() {
             >
               SHOP
             </Link>
-            <button className="hidden md:flex hover:underline decoration-1 underline-offset-2">
-              SEARCH
-            </button>
-            <Icon
-              icon="material-symbols:search"
-              className="h-6 w-6 lg:hidden"
-            />
+            <Link
+              href="/about"
+              className="hover:underline decoration-1 underline-offset-2"
+            >
+              <button className="hidden md:flex">CONTACT</button>
+              <Icon
+                icon="material-symbols:contact-support-outline-rounded"
+                className="h-6 w-6 lg:hidden"
+              />
+            </Link>
           </div>
           <div className="flex flex-row items-center gap-4 lg:gap-8 hover:underline decoration-1 underline-offset-2">
             <DarkModeBtn />
