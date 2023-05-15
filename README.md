@@ -1,34 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Description
 
-## Getting Started
+WAVFORM is an commerce site with a focus of selling Sound Packs and Synth Presets to be used in electronic music production. The project was built with Typescript and TailwindCSS using version 13.4 Next.js, giving us the now stable App Router.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Next.js 13 [App Router] (https://nextjs.org/blog/next-13-4#nextjs-app-router)
+- Next.js [Server Components] (https://nextjs.org/blog/next-13-4#server-actions-alpha)
+- [Swell] (https://swell.is/) Commerce Storefront
+- [Stripe] (https://stripe.com/) secure payments
+- Cart Slider Component from [Headless UI] (https://headlessui.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Swell
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Swell allows us to maintain a storefront using their admin dashboard, where products can be uploaded and maintained. For this project I added 6 Sound Packs that I create using XFer Records' [Serum Synthesizer] (https://xferrecords.com/products/serum). I created a cover image for each Sound Pack and uploaded them as products to my Swell Admin account along with a name, description, and cost. The Swell API also gives us access to cart functionality and secure stripe payments, streamlining the checkout process.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Live Demo] (https://wavform.vercel.app/)

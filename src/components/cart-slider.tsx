@@ -103,7 +103,7 @@ const CartSlider = ({
                                       src={item.product.images[0].file.url}
                                       alt={item.product.name}
                                       className="h-full w-full object-cover object-center"
-                                      layout="fill"
+                                      fill
                                     />
                                   </div>
 

@@ -6,7 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import DarkModeBtn from "../DarkModeBtn";
-import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { getCart } from "../../../lib/swell/cart";
 import CartSlider from "../cart-slider";
 
