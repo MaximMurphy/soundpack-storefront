@@ -31,7 +31,7 @@ export function HomePageText() {
           <Link href="/about" className="font-bold">
             Learn More{" "}
           </Link>
-          <Icon icon="ic:sharp-arrow-right-alt" className="h-6 w-6 mt-1" />
+          <Icon icon="mdi:arrow-right-thin" className="h-6 w-6 mt-1" />
         </div>
       </div>
     </main>
