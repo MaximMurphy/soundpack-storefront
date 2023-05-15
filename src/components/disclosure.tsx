@@ -16,8 +16,8 @@ const MyDisclosure = () => {
             </Disclosure.Button>
             <Disclosure.Panel>
               <p className="bg-stone-100 dark:bg-stone-900 w-48 lg:w-96 border border-stone-200 dark:border-stone-950 text-base font-medium tracking-wide p-4">
-                After ordering you will promptly receive an order confirmation
-                via e-mail with a link to download your order.
+                After ordering you will receive an order confirmation via e-mail
+                with a link to download your order.
               </p>
             </Disclosure.Panel>
           </div>
@@ -26,13 +26,14 @@ const MyDisclosure = () => {
           <div className="flex flex-col items-center">
             <Disclosure.Button>
               <p className="bg-stone-100 dark:bg-stone-900 w-48 lg:w-96 border border-stone-200 dark:border-stone-950 text-base font-medium tracking-wide p-4">
-                What exactly happens after ordering?
+                Are WAVFORM sounds royalty free?
               </p>
             </Disclosure.Button>
             <Disclosure.Panel>
               <p className="bg-stone-100 dark:bg-stone-900 w-48 lg:w-96 border border-stone-200 dark:border-stone-950 text-base font-medium tracking-wide p-4">
-                After ordering you will promptly receive an order confirmation
-                via e-mail with a link to download your order.
+                All sounds bought and downloaded here are 100% roylaty free.
+                They can all be used directly in your tracks without
+                consequence.
               </p>
             </Disclosure.Panel>
           </div>
