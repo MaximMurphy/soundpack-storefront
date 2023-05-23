@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HomePageText = () => {
   return (
-    <main className="w-full h-max flex flex-col items-center dark:text-stone-200">
+    <section className="w-full h-max flex flex-col items-center dark:text-stone-200">
       <h1 className="text-3xl lg:text-5xl font-medium tracking-wide antialiased text-center px-12 pt-20 lg:px-64 lg:pt-36">
         <span className="font-semibold">Innovative </span>
         and <span className="font-semibold">Unique</span> sounds for your dream
@@ -32,7 +32,7 @@ const HomePageText = () => {
           </Link>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

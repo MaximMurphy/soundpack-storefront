@@ -22,7 +22,7 @@ const Products = ({ products }: { products: Array<any> }) => {
                 width={400}
                 height={400}
                 quality="100"
-                className="group-hover:opacity-75"
+                className="group-hover:opacity-75 bg-white"
               />
             </div>
             <h3 className="mt-2 text-base font-semibold tracking-wide">

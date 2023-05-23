@@ -42,7 +42,7 @@ const Product = ({ product }: { product: any }) => {
             quality="100"
             src={image.file.url}
             alt={image.file.metadata || ""}
-            className="h-72 w-72 lg:h-[30rem] lg:w-[30rem] object-cover object-center sm:rounded-lg"
+            className="bg-white h-72 w-72 lg:h-[30rem] lg:w-[30rem] object-cover object-center sm:rounded-lg"
           />
         ))}
 
