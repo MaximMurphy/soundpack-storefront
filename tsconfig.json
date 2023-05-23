@@ -32,7 +32,8 @@
     "src/components/product.tsx",
     "lib/swell/client.js",
     "lib/swell/products.js",
-    "lib/swell/cart.js"
+    "lib/swell/cart.js",
+    "src/components/layout/Navbar.jsx"
   ],
   "exclude": ["node_modules"]
 }
