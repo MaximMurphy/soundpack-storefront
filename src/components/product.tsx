@@ -52,8 +52,10 @@ const Product = ({ product }: { product: any }) => {
 
           <div className="mt-3">
             <h2 className="sr-only">Product information</h2>
-            <p className="text-3xl">
-              {formatCurrency({ amount: product.price })}
+            <p className="text-2xl">
+              {product.price >= 1
+                ? formatCurrency({ amount: product.price })
+                : "Coming Soon"}
             </p>
           </div>
 
@@ -68,13 +70,17 @@ const Product = ({ product }: { product: any }) => {
 
           <form onSubmit={handleSubmit}>
             <div className="mt-8">
-              <button
-                type="submit"
-                disabled={isMutating}
-                className="flex w-48 items-center justify-center rounded-lg bg-blue-800 hover:bg-indigo-800 p-4 text-base font-medium text-white  focus:outline-none focus:ring-2 focus:ring-fuchsia-800 focus:ring-offset-2 focus:ring-offset-stone-50 disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                {isMutating ? <Blinker /> : "Add to Bag"}
-              </button>
+              {product.price >= 1 ? (
+                <button
+                  type="submit"
+                  disabled={isMutating}
+                  className="flex w-48 items-center justify-center rounded-lg bg-blue-800 hover:bg-indigo-800 p-4 text-base font-medium text-white  focus:outline-none focus:ring-2 focus:ring-fuchsia-800 focus:ring-offset-2 focus:ring-offset-stone-50 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {isMutating ? <Blinker /> : "Add to Bag"}
+                </button>
+              ) : (
+                <p></p>
+              )}
             </div>
           </form>
         </div>

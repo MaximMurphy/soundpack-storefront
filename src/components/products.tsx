@@ -29,7 +29,9 @@ const Products = ({ products }: { products: Array<any> }) => {
               {product.name}
             </h3>
             <p className="mt-1 text-sm font-semibold tracking-wide">
-              {formatCurrency({ amount: product.price })}
+              {product.price >= 1
+                ? formatCurrency({ amount: product.price })
+                : "Coming Soon"}
             </p>
           </Link>
         ))}
