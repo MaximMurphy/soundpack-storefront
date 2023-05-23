@@ -9,7 +9,7 @@ import DarkModeBtn from "../DarkModeBtn";
 import { getCart } from "../../../lib/swell/cart";
 import CartSlider from "../cart-slider";
 
-export default function Navbar() {
+const Navbar = () => {
   const { data: cart, isLoading } = useSWR("cart", getCart);
   const [cartSliderIsOpen, setCartSliderIsOpen] = useState(false);
 
@@ -78,4 +78,6 @@ export default function Navbar() {
       />
     </>
   );
-}
+};
+
+export default Navbar;
