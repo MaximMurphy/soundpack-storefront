@@ -2,10 +2,9 @@
 
 import Blob from "@/components/Blob";
 import StaticBlob from "@/components/StaticBlob";
-import { Icon } from "@iconify/react";
 import Link from "next/link";
 
-export function HomePageText() {
+const HomePageText = () => {
   return (
     <main className="w-full h-max flex flex-col items-center dark:text-stone-200">
       <h1 className="text-3xl lg:text-5xl font-medium tracking-wide antialiased text-center px-12 pt-20 lg:px-64 lg:pt-36">
@@ -31,29 +30,30 @@ export function HomePageText() {
           <Link href="/about" className="font-bold">
             Learn More{" "}
           </Link>
-          <Icon icon="mdi:arrow-right-thin" className="h-6 w-6 mt-1" />
         </div>
       </div>
     </main>
   );
-}
+};
 
 export default function Home() {
-  if (window.matchMedia("(min-width: 701px)").matches) {
-    //desktop
-    return (
-      <div className="overflow-hidden">
-        <HomePageText />
-        <Blob />
-      </div>
-    );
-  } else {
-    //mobile
-    return (
-      <div className="overflow-hidden">
-        <StaticBlob />
-        <HomePageText />
-      </div>
-    );
+  if (typeof window !== "undefined") {
+    if (window.matchMedia("(min-width: 701px)").matches) {
+      //desktop
+      return (
+        <div className="overflow-hidden">
+          <HomePageText />
+          <Blob />
+        </div>
+      );
+    } else {
+      //mobile
+      return (
+        <div className="overflow-hidden">
+          <StaticBlob />
+          <HomePageText />
+        </div>
+      );
+    }
   }
 }

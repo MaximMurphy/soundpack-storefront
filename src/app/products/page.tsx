@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 const Page = async () => {
-  const { results: products } = await getProducts({ page: 1 });
+  const { results: products } = await getProducts();
 
   return <Products products={products} />;
 };
