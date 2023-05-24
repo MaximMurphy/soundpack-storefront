@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <Link href="/" className="flex text-center justify-center">
           <Image
-            src="/wavform.png"
+            src="/wavform2.png"
             alt="WAVFORM"
             height={229}
             width={1090}
